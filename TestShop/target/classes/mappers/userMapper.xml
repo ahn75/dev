@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="org.study.mapper.UserMapper" >
+
+	<insert id="create" >
+		insert into test_user_tbl(id, name, age, hobby)
+		values(#{id}, #{name}, #{age}, #{hobby})
+	</insert>
+	
+	<select id="read" resultType="org.study.shop.model.User" >
+		select * from test_user_tbl where id=#{id}
+	</select>
+	
+	<delete id="delete" >
+		delete from test_user_tbl where id=#{id}
+	</delete>
+
+
+	<select id="listAll" resultType="org.study.shop.model.User" >
+	<![CDATA[
+		select * from test_user_tbl
+	]]>
+	</select>
+
+</mapper>
