@@ -2,7 +2,6 @@
 pageEncoding="UTF-8" %>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
 <%@ page session="false" %>
 
@@ -20,7 +19,7 @@ pageEncoding="UTF-8" %>
     <th> AGE </th>
     <th> HOBBY </th>
   </tr>
-  	<c:forEach items="${list}" var="user">
+  	<c:forEach items="${list}" var="user" >
   <tr>
     <td> ${user.id } </td>
     <td> ${user.name } </td>
