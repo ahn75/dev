@@ -24,7 +24,7 @@ pageEncoding="UTF-8" %>
     <td> ${user.id } </td>
     <td> ${user.name } </td>
     <td> ${user.age } </td>
-    <td> ${user.hobby } </td>
+    <td></td>
   </tr>
   	</c:forEach>
 </table>

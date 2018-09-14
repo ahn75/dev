@@ -17,7 +17,6 @@
 		
 	</header>
 	
-	
 	<nav>
 		<a href="${pageContext.request.contextPath }/register" > 회원등록 </a>
 		<a href="${pageContext.request.contextPath }/list" > 회원목록 </a>

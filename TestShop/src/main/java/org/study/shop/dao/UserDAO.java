@@ -12,3 +12,4 @@ public interface UserDAO {
 	public List<User> listAll() throws Exception;
 
 }
+

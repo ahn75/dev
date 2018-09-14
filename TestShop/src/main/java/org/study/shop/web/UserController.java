@@ -36,7 +36,7 @@ public class UserController {
 		return "list";
 	}
 	
-	@RequestMapping("user")
+	@RequestMapping("register")
 	public String register() {
 		logger.info("/register was called");
 		return "register";

@@ -18,7 +18,6 @@
 		delete from test_user_tbl where id=#{id}
 	</delete>
 
-
 	<select id="listAll" resultType="org.study.shop.model.User" >
 	<![CDATA[
 		select * from test_user_tbl

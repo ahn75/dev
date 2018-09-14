@@ -21,11 +21,13 @@ public class UserDAOImpl implements UserDAO {
 
 	}
 
+	
 	@Override
 	public void delete(User id) throws Exception {
 		session.delete(namespace + ".delete", id);
 
 	}
+	
 	
 	@Override
 	public List<User> listAll() throws Exception {
